@@ -1,0 +1,42 @@
+<div class="container mt-5">
+
+    <div class="row">
+
+        {{#each products}}
+        <div class="col-md-4 mb-3">
+            <div class=" card">
+                {{!-- <ul>
+                    {{#each images}}
+                    <li><img class="card-img-top img" src="{{this}}" alt=""></li>
+                    {{/each}}
+                </ul> --}}
+
+                <div class="card-body">
+                    <h3>{{title}}</h3>
+                    <p>description:
+                        <br>
+                        {{description}}
+                        </p>
+                    <h4>Price:
+                        {{price}}</h4>
+                    <h4>discount:
+                        {{discountPercentage}}</h4>
+                    <h4>rating:
+                        {{rating}}</h4>
+                    <h4>stock:
+                        {{stock}}</h4>
+                    <h4>brand:
+                        {{brand}}</h4>
+                    <h4>category:
+                        {{category}}</h4>
+                    <img src="{{thumbnail}}" alt="">
+                </div>
+            </div>
+            <a href="/" class="btn btn-dark">Comprar</a>
+        </div>
+
+        {{/each}}
+    </div>
+
+
+</div>
